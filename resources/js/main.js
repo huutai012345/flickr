@@ -5,6 +5,7 @@ $(document).ready(function () {
     if (tags.length === 0) {
       alert("Please enter tags");
     } else {
+      $(".content").empty();
       $.ajax({
         type: "POST",
         url:
